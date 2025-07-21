@@ -106,7 +106,7 @@ This project is open source and licensed under the MIT License.
 
 ## Author
 
-[Your Name or GitHub Username]
+[WALEED ALHARBI]
 
 ---
 
