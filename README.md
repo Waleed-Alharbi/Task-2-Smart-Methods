@@ -1,21 +1,65 @@
-# Task-2-Smart-Methods
 # Simple Task System Project
+
+A simple PHP and MySQL web application for managing user records and task status updates locally using XAMPP.
+
+---
+
+## Project Preview
+
+<p align="center">
+  <img src="screenshots/xampp-preview.png" width="800">
+</p>
+
+<p align="center">
+  <img src="screenshots/code-preview.png" width="800">
+</p>
+
+---
 
 ## Overview
 
-This project is a simple web application built with PHP and MySQL for managing a basic task list.  
-Users can submit their name and age via a form, and the data is stored in a MySQL database.  
-All records are displayed in a table below the form, with a toggle button for each record to switch the status between 0 and 1 instantly.
+This project is a simple web application built with PHP and MySQL for managing a basic task list system.
+
+Users can submit their name and age through a form, and the data is stored in a MySQL database.  
+All records are displayed dynamically in a table with a toggle button that updates the status instantly using JavaScript Fetch API without reloading the page.
+
+---
+
+## Features
+
+- Add new user records
+- Store data using MySQL
+- Display all records dynamically
+- Toggle status between `0` and `1`
+- Instant status update using Fetch API
+- Simple responsive UI
+- Local server support using XAMPP
 
 ---
 
 ## Technologies Used
 
-- PHP (backend)
-- MySQL (database)
-- HTML / CSS (frontend)
-- JavaScript (for instant status update using Fetch API)
-- XAMPP (local server to run the project)
+- PHP
+- MySQL
+- HTML
+- CSS
+- JavaScript
+- Fetch API
+- XAMPP
+
+---
+
+## Project Structure
+
+```text
+project/
+├── index.php
+├── db.php
+├── insert.php
+├── toggle.php
+├── style.css
+└── screenshots/
+```
 
 ---
 
@@ -23,92 +67,72 @@ All records are displayed in a table below the form, with a toggle button for ea
 
 ### Requirements
 
-- XAMPP or any local server supporting PHP and MySQL
-- Modern web browser (Chrome, Firefox, Edge, etc.)
-
-### Steps
-
-1. **Start XAMPP**  
-   Run Apache and MySQL services from the XAMPP control panel.
-
-2. **Create Database**  
-   - Open your browser and go to `http://localhost/phpmyadmin`  
-   - Create a new database named `task2`  
-   - Inside the database, run this SQL query to create the `users` table:
-
-    ```sql
-    CREATE TABLE users (
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        name VARCHAR(100),
-        age INT,
-        status TINYINT(1) DEFAULT 0
-    );
-    ```
-
-3. **Add Project Files**  
-   - Copy your project folder (e.g., `smart_task2`) into XAMPP’s `htdocs` directory (usually `C:\xampp\htdocs\`)  
-   - Ensure these files are inside the folder: `index.php`, `db.php`, `insert.php`, `toggle.php`, and `style.css`.
-
-4. **Configure Database Connection (Optional)**  
-   - Open `db.php` and verify the database connection settings match your setup:
-
-    ```php
-    $conn = new mysqli("localhost", "root", "", "task2");
-    ```
-
-5. **Run the Project**  
-   - Open your browser and visit: `http://localhost/smart_task2/`  
-   - You should see the input form and below it the table with records and toggle buttons.
+- XAMPP or any local PHP server
+- MySQL
+- Modern web browser
 
 ---
 
-## Key Files Explanation
+### Installation Steps
 
-- **index.php**:  
-  Main page showing the input form and the records table with toggle buttons.
+1. Start Apache and MySQL from XAMPP.
 
-- **db.php**:  
-  Handles database connection.
+2. Open phpMyAdmin:
 
-- **insert.php**:  
-  Processes the submitted form data and inserts it into the database.
+```text
+http://localhost/phpmyadmin
+```
 
-- **toggle.php**:  
-  Handles AJAX requests to toggle the status field in the database instantly.
+3. Create a database named:
 
-- **style.css**:  
-  Contains styling for the webpage.
+```text
+task2
+```
+
+4. Run the following SQL query:
+
+```sql
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    age INT,
+    status TINYINT(1) DEFAULT 0
+);
+```
+
+5. Move the project folder into:
+
+```text
+C:\xampp\htdocs\
+```
+
+6. Open the project in your browser:
+
+```text
+http://localhost/smart_task2/
+```
 
 ---
 
-## Features
+## Important Note
 
-- Add new user data (name and age) into the database.
-- Display all records in a table format.
-- Toggle the `status` field between 0 and 1 for each record via a button.
-- Instant status update on the page without reload using JavaScript Fetch API.
+This project was developed for training and learning purposes in a local environment using XAMPP.
 
----
-
-## Notes
-
-- This project is intended for learning and local use.  
-- Not recommended for production without proper security enhancements.  
-- Possible extensions: add record deletion, editing, validation, and user authentication.
+Before running the project locally, make sure your database connection settings inside `db.php` match your local MySQL configuration.
 
 ---
 
-## License
+## Future Improvements
 
-This project is open source and licensed under the MIT License.
+- User authentication system
+- Record editing and deletion
+- Input validation
+- Better UI/UX
+- Secure database handling
+- Deployment support
 
 ---
 
 ## Author
 
-[WALEED ALHARBI]
-
----
-
-Thank you for checking out this project!  
-Feel free to open an issue or contact me for any questions or suggestions.
+Waleed Alharbi
