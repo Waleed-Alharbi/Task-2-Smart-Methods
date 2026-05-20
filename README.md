@@ -4,28 +4,63 @@ A simple PHP and MySQL web application for managing user records and task status
 
 ---
 
-## Project Preview
+# Project Preview
+
+## Website Interface
 
 <p align="center">
-  <img src="screenshots/xampp-preview.png" width="800">
+  <img src="screenshots/website-preview.png" width="900">
 </p>
 
-<p align="center">
-  <img src="screenshots/code-preview.png" width="800">
-</p>
+This is the main interface of the application where users can:
+
+- Insert new records
+- View all saved records
+- Toggle status instantly without page reload
 
 ---
 
-## Overview
+## Database Preview
+
+<p align="center">
+  <img src="screenshots/database-preview.png" width="900">
+</p>
+
+This screenshot shows the MySQL database table inside phpMyAdmin, including stored user records and status values.
+
+---
+
+## Code Preview
+
+<p align="center">
+  <img src="screenshots/code-preview.png" width="900">
+</p>
+
+The project source code was developed using PHP, MySQL, HTML, CSS, and JavaScript.
+
+---
+
+## XAMPP Environment
+
+<p align="center">
+  <img src="screenshots/xampp-preview.png" width="700">
+</p>
+
+The application runs locally using Apache and MySQL through XAMPP.
+
+---
+
+# Overview
 
 This project is a simple web application built with PHP and MySQL for managing a basic task list system.
 
-Users can submit their name and age through a form, and the data is stored in a MySQL database.  
+Users can submit their name and age through a form, and the data is stored in a MySQL database.
+
 All records are displayed dynamically in a table with a toggle button that updates the status instantly using JavaScript Fetch API without reloading the page.
 
 ---
 
-## Features
+# Features
 
 - Add new user records
 - Store data using MySQL
@@ -37,7 +72,7 @@ All records are displayed dynamically in a table with a toggle button that updat
 
 ---
 
-## Technologies Used
+# Technologies Used
 
 - PHP
 - MySQL
@@ -49,7 +84,7 @@ All records are displayed dynamically in a table with a toggle button that updat
 
 ---
 
-## Project Structure
+# Project Structure
 
 ```text
 project/
@@ -63,9 +98,9 @@ project/
 
 ---
 
-## Setup and Run Locally
+# Setup and Run Locally
 
-### Requirements
+## Requirements
 
 - XAMPP or any local PHP server
 - MySQL
@@ -73,7 +108,7 @@ project/
 
 ---
 
-### Installation Steps
+## Installation Steps
 
 1. Start Apache and MySQL from XAMPP.
 
@@ -114,7 +149,7 @@ http://localhost/smart_task2/
 
 ---
 
-## Important Note
+# Important Note
 
 This project was developed for training and learning purposes in a local environment using XAMPP.
 
@@ -122,7 +157,7 @@ Before running the project locally, make sure your database connection settings 
 
 ---
 
-## Future Improvements
+# Future Improvements
 
 - User authentication system
 - Record editing and deletion
@@ -133,6 +168,6 @@ Before running the project locally, make sure your database connection settings 
 
 ---
 
-## Author
+# Author
 
 Waleed Alharbi
